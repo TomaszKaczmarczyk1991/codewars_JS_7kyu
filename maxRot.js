@@ -13,10 +13,14 @@
 // max_rot(38458215) should return 85821534
 
 function maxRot(n) {
+  let digits = Array.from(n.toString());
+  let maxNum = parseInt(digits.join(''), 10);
 
-    return
+  for (let i = 0; i < digits.length - 1; i++) {
+    let removed = digits.splice(i, 1); 
+    digits.push(removed[0]);
+    let currentNum = parseInt(digits.join(''), 10);
+    if (currentNum > maxNum) maxNum = currentNum;
   }
-
-  //56789 -> 67895 -> 68957 -> 68579 -> 68597
-
-  console.log(maxRot(56789));
+  return maxNum;
+}
