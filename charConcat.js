@@ -3,7 +3,6 @@ function charConcat(string) {
   let result = [];
   let counter = 0;
 
-
   if (str.length % 2 !== 0) {
     str.splice(Math.floor(str.length / 2), 1);
   }
@@ -12,6 +11,5 @@ function charConcat(string) {
     counter++;
     result.push(str[i], str[str.length - 1 - i], counter);
   }
-
   return result.join("");
 }
