@@ -18,9 +18,7 @@ function boredom(staff){
         totalScore += boredomScores[staff[score]];
     }
     
-    if(totalScore <= 80) return 'kill me now'
-    if(totalScore < 100 && totalScore > 80) return 'i can handle this'
-    if(totalScore >= 100) return 'party time!!'
+    return totalScore <= 80 ? "kill me now" : sum < 100 ? "i can handle this" : "party time!!";
 }
 
 console.log(boredom({
