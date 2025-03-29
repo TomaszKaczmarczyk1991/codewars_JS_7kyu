@@ -6,3 +6,5 @@ function nicknameGenerator(name){
   }
 
 console.log(nicknameGenerator('Gregory')) // Greg
+
+// Rozwiazanie nie przechodzi testow na Codewars. Metoda toSpliced() została wprowadzona w Node.js w wersji 20. Obecnie Codewars korzysta z wersji Node 18, która nie obsługuje tej metody
