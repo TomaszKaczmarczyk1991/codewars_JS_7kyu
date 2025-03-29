@@ -1,5 +1,4 @@
 function hiddenWord(num) {
-    const numStr = num.toString();
     const key = {
         6 : 'a',
         1 : 'b',
@@ -13,12 +12,7 @@ function hiddenWord(num) {
         5 : 't'
     }
     
-    const result = [];
-
-    for(let i = 0; i < numStr.length; i++){
-        if(key[numStr[i]]) result.push(key[numStr[i]]);
-    }
-   return result.join('');
+    return num.toString().split('').map(digit => key[digit] || '').join('');
 }
 
 console.log(hiddenWord(74132))
