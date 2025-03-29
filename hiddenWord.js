@@ -16,7 +16,9 @@ function hiddenWord(num) {
     const result = [];
 
     for(let i = 0; i < numStr.length; i++){
-        if(key.hasOwnProperty(numStr[i])) result.push(key[Number(numStr[i])]);
+        if(key[numStr[i]]) result.push(key[Number(numStr[i])]);
     }
    return result.join('');
 }
+
+console.log(hiddenWord(74132))
