@@ -1,5 +1,5 @@
 function evenChars(string) {
-    if (typeof string !== 'string' || string.length < 2 || string.length > 100) {
+    if (typeof string !== 'string' || string.length < 2) {
       return "invalid string";
     }
   
@@ -7,4 +7,4 @@ function evenChars(string) {
                 .filter((_, index) => (index + 1) % 2 === 0);
   }
 
-console.log(evenChars(";;;--")) // ["b", "d", "f", "h", "j", "l"]
+console.log(evenChars("abcdefghijklm")) // ["b", "d", "f", "h", "j", "l"]
