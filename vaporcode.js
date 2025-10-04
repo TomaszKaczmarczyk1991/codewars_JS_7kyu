@@ -3,3 +3,5 @@ function vaporcode(string) {
   
   return str.filter(char => char !== ' ').join('  ');
 }
+
+//test
