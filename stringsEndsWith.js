@@ -7,3 +7,10 @@ function solution(str, ending){
 }
 
 console.log(solution("test", "st"))
+
+
+// CODEWARS BEST PRACTICES:
+
+// function solution(str, ending){
+//   return str.endsWith(ending);
+// }
