@@ -1,6 +1,5 @@
 var number = function(busStops){
   let peopleIn = busStops[0][0]
-  const peopleOut = busStops[0][1]
   
   for(let i = 1; i < busStops.length; i++){
       peopleIn += busStops[i][0]
