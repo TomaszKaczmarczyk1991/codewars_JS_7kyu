@@ -4,7 +4,6 @@ const sequenceSum = (begin, end, step) => {
   let current = begin
 
   while(current <= end){
-    if(current > end) continue
     result += current
     current += step
   }
