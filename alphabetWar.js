@@ -7,9 +7,6 @@ function alphabetWar(fight){
    
    for(let i of fight){
        if(leftSide[i]) leftResult += leftSide[i]
-   }
-   
-   for(let i of fight){
        if(rightSide[i]) rightResult += rightSide[i]
    }
    
